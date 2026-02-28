@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoFI Chilling v.(int) h3</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero-card">
+        <header class="hero-header">
+          <div>
+            <p class="kicker">LoFI Chilling v.(int) h3</p>
+            <h1>LoFI in Your Web</h1>
+          </div>
+          <time id="clock" aria-live="polite">--:--</time>
+        </header>
+
+        <p class="summary">
+          음성 채팅 없이, 혼자 혹은 함께 코드로 입장해 느린 템포의 LoFI와 앰비언스를 즐기세요.
+        </p>
+
+        <div class="room-panel">
+          <div class="room-row">
+            <button id="createRoomBtn" class="primary-btn">룸 생성</button>
+            <label class="code-input-wrap">
+              <span class="sr-only">참여 코드</span>
+              <input id="roomCodeInput" maxlength="6" placeholder="코드 입력" />
+            </label>
+            <button id="joinRoomBtn" class="ghost-btn">코드로 입장</button>
+          </div>
+          <p id="roomStateText" class="room-state">Solo 모드</p>
+        </div>
+
+        <div class="controls-grid">
+          <section class="control-block">
+            <h2>Music</h2>
+            <div class="row">
+              <button id="playBtn" class="primary-btn">재생</button>
+              <button id="pauseBtn" class="ghost-btn">일시정지</button>
+            </div>
+            <label class="slider-label" for="musicVolume">음악 볼륨</label>
+            <input id="musicVolume" type="range" min="0" max="100" value="55" />
+            <label class="slider-label" for="tempoSelect">슬로우 템포</label>
+            <select id="tempoSelect">
+              <option value="58">느림 (58 BPM)</option>
+              <option value="65" selected>기본 (65 BPM)</option>
+              <option value="72">조금 빠름 (72 BPM)</option>
+            </select>
+          </section>
+
+          <section class="control-block">
+            <h2>Additional Sound</h2>
+            <div class="toggle-row">
+              <label><input id="rainToggle" type="checkbox" checked /> Rain</label>
+              <label><input id="cafeToggle" type="checkbox" /> Cafe</label>
+            </div>
+            <label class="slider-label" for="rainVolume">Rain 볼륨</label>
+            <input id="rainVolume" type="range" min="0" max="100" value="35" />
+            <label class="slider-label" for="cafeVolume">Cafe 볼륨</label>
+            <input id="cafeVolume" type="range" min="0" max="100" value="20" />
+            <p class="hint">같이 듣기에서는 방장만 Additional Sound를 제어할 수 있습니다.</p>
+          </section>
+        </div>
+
+        <footer class="credit">
+          <strong>LoFI Chilling v.(int) h3</strong>
+          <span>not affliated with any of streaming.</span>
+          <span>made by Android_Studio_Developer</span>
+          <a href="https://github.com/" target="_blank" rel="noreferrer">
+            <img src="https://github.githubassets.com/favicons/favicon.svg" alt="GitHub" />
+            Github
+          </a>
+        </footer>
+      </section>
+
+      <div class="bg-orb bg-orb-a"></div>
+      <div class="bg-orb bg-orb-b"></div>
+      <div class="bg-grid"></div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
