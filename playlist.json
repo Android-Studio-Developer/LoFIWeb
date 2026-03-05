@@ -1,0 +1,18 @@
+{
+  "tracks": [
+    { "id": "lofi-01", "title": "Slow Study 01", "src": "/tracks/lofi-1.mp3" },
+    { "id": "lofi-02", "title": "Slow Study 02", "src": "/tracks/lofi-2.mp3" },
+    { "id": "lofi-03", "title": "Slow Study 03", "src": "/tracks/lofi-3.mp3" },
+    { "id": "lofi-04", "title": "Slow Study 04", "src": "/tracks/lofi-4.mp3" },
+    { "id": "lofi-05", "title": "Slow Study 05", "src": "/tracks/lofi-5.mp3" }
+  ],
+
+
+
+  "ambience": [
+    { "id": "rain", "title": "Rain", "src": "/tracks/rain.mp3" },
+    { "id": "campfire", "title": "Campfire", "src": "/tracks/Campfire.mp3" },
+    { "id": "traffic", "title": "City Traffic", "src": "/tracks/City_Traffic.mp3" },
+    { "id": "typing", "title": "Typing", "src": "/tracks/typing.mp3" }
+  ]
+}
